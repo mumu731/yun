@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>用户详情页</title>
+		<title>用户情页</title>
 		<link rel="stylesheet" href="../css/default/easyui.css" />
 		<link rel="stylesheet" href="../css/icon.css" />
 		<script src="../js/jquery.min.js"></script>
