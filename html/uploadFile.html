@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/layui.css"/>
+		<style type="text/css">
+			iframe{
+				display: block;
+				width: 100%;
+				height: 600px;
+				border: hidden;
+				margin: 0px auto;
+				position: absolute;
+			}
+			body{
+				background-color: #F7F8F9;
+			}
+			.file {
+			    position: relative;
+			    display: inline-block;
+			    overflow: hidden;
+			    text-decoration: none;
+			}
+			.file input {
+			    position: absolute;
+			    font-size: 50px;
+			    right: 0;
+			    top: 0;
+			    opacity: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<form action="../admin/doUpload.php" method="post" enctype="multipart/form-data">
+				<a href="javascript:;" class="layui-btn layui-btn-big layui-btn-radius layui-btn-normal file">选择文件
+					<input type="file" name="file[]" multiple="multiple" />			
+				</a>
+				<input type="submit" value="点击上传" 	class="layui-btn layui-btn-big layui-btn-radius layui-btn-normal"/>			
+			</form>
+		</div>
+		<hr />
+		<iframe  scrolling="yes" src="../admin/file.php" scrd id="iframe1"></iframe>
+	</body>
+</html>
